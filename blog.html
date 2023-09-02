@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Tailwind and DaisyUI Component -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="mt-10 w-[90%] mx-auto">
+        <li class="text-2xl ml-10 font-bold mb-6">Discuss the scope of var, let, and const</li>
+        <p class="text-xl ml-20"><span class="font-bold">1. var:</span> <br>
+            <span class="font-semibold underline">Function Scope:</span>
+            Variables that are declared with var are function-scoped. This indicates that they are only used within the defined function.
+        </p>
+        <p class="text-xl ml-20">
+            <span class="font-semibold underline">Hoisting:</span>
+            Var variables are elevated to the top of the function or global scope in which they are used. This means that even if you can access them before they are declared in the code, they will start out with an undefined value.
+        </p>
+        <p class="text-xl ml-20">
+            <span class="font-semibold underline">No Block Scope:</span>If you define a var variable inside of a block (such as an if statement or a for loop), it is accessible outside of that block since var does not have block-level scope.
+        </p>
+        <p class="text-xl ml-20">
+            <span class="font-bold">2. let:</span><br>
+            <span class="font-semibold underline">Block Scope:</span>Let-declared variables are block-scoped, which means that only the block in which they are defined can access them. This applies to code blocks like if statements, for loops, and others.
+            <br>
+            <span class="font-semibold underline">Hoisting:</span>Although let variables are raised, they are not initialised. You will get a ReferenceError if you attempt to access a let variable before it has been defined in the programme.
+        </p>
+        <p class="text-xl ml-20">
+            <span class="font-bold">3. const:</span><br>
+            <span class="font-semibold underline">Block Scope:</span>
+            Like let, variables declared with const are block-scoped and only accessible within the block in which they are defined.<br>
+            <span class="font-semibold underline">Immutability:</span>
+            Const variables cannot be reassigned after they
+            are declared. However, for objects and arrays
+            declared with const, their properties or elements can still be modified.<br>
+            <span class="font-semibold underline">Hoisting:</span>
+            Const variables are also hoisted but not initialized.
+            Similar to let, trying to access a const
+            variable before it's declared will result in a ReferenceError.
+        </p>
+        <p class="text-xl ml-20">
+            The scope of var is function-scoped, and it lacks block-level scoping, which can lead to unexpected
+            behavior. let and const both have block-level scope, but const is used when you want to declare a variable
+            that should not be reassigned after its initial assignment. It's important to choose the appropriate
+            variable declaration based on your specific use case to avoid scope-related issues in your JavaScript code.
+        </p>
+        <li class="text-2xl ml-10 font-bold mb-6 mt-6">Tell us the use cases of null and undefined
+        </li>
+        <p class="text-xl ml-20">Null is an object in JavaScript and represents primitive data types. A null value in
+            JavaScript is used for referring absence of any object value and if any function or variable returns null,
+            then we can infer that the object could not be created. <br> The undefined property indicates that a
+            variable has not been assigned a value, or not declared at all.</p>
+        <li class="text-2xl ml-10 font-bold mt-10">What do you mean by REST API?</li>
+        <div class="flex mt-10 mb-20">
+            <img class="h-[20%] w-[30%] ml-20" src="https://www.seobility.net/en/wiki/images/f/f1/Rest-API.png" alt="">
+            <p class="text-xl ml-16 ">REST is an alternative to methods such as SOAP (Simple Object Access Protocol) and WSDL (Web Services
+                Description Language). It was developed towards the end of the 1990s and fundamentally changed the API
+                landscape. The first companies to use a REST API were eBay and Amazon. Only a selection of partners got
+                access to eBay’s well documented and user-friendly REST API. As a result, eBay’s marketplace was not
+                only accessible through direct visits but through any website that accessed the eBay API.
+
+                Flickr also launched a REST API in 2004, just in time for the rise of social networking and blogs on the
+                web. This paved the way for social sharing, which Facebook and Twitter later joined.
+
+                In 2006, Amazon’s REST API helped contribute to the development of the cloud, which is now widely used.
+                RESTful APIs allow users to connect to the cloud and interact with cloud services. They are now accessed
+                by many websites and are considered the backbone of the web.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
